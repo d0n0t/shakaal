@@ -1,1 +1,1 @@
-
+worker: python auth.py
