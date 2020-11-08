@@ -1,1 +1,30 @@
+{
+    "name": "ShaKaaL",
+    "description": "Heroku+colab",
+    "logo": "",
+    "keywords": [
+        "shakaal",
+        "hello",
+        "shaKAAL"
+    ],
+    "repository": "https://github.com/d0n0t/shakaal",
+    "website": "https://github.com/d0n0t/shakaal",
+    "success_url": "t.me/@midnightmadwalk",
+    "env": [],
+    "addons": [],
+    "buildpacks": [
+        {"url": "https://github.com/rking32/heroku-buildpack-google-chrome"},
+        {"url": "https://github.com/rking32/heroku-buildpack-chromedriver"},
+        {"url": "https://github.com/heroku/heroku-buildpack-apt.git"},
+        {"url": "heroku/python"}
+       ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
 
+       
+    
