@@ -5,7 +5,7 @@ print('Enter the gmailid and password')
 gmailId, passWord = map(str, input().split()) 
 try: 
     driver = webdriver.Chrome(ChromeDriverManager().install()) 
-    driver.get(https://accounts.google.com/signin) 
+    driver.get('https://accounts.google.com/signin') 
     driver.implicitly_wait(15) 
   
     loginBox = driver.find_element_by_xpath('//*[@id ="identifierId"]') 
