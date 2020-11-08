@@ -5,9 +5,7 @@ print('Enter the gmailid and password')
 gmailId, passWord = map(str, input().split()) 
 try: 
     driver = webdriver.Chrome(ChromeDriverManager().install()) 
-    driver.get(https://accounts.google.com/signin/v2/identifier?continue= 
-    https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1 
-    &flowName=GlifWebSignIn&flowEntry=ServiceLogin) 
+    driver.get(https://accounts.google.com/signin) 
     driver.implicitly_wait(15) 
   
     loginBox = driver.find_element_by_xpath('//*[@id ="identifierId"]') 
